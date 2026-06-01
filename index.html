@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Three.js Helicopter Simulator</title>
+    <style>
+      body { margin: 0; overflow: hidden; font-family: sans-serif; }
+      #canvas-container { width: 100vw; height: 100vh; }
+      #hud {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background: rgba(0, 0, 0, 0.7);
+          color: #fff;
+          padding: 15px;
+          border-radius: 8px;
+          font-size: 14px;
+          line-height: 1.5;
+          pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hud">システム起動中...</div>
+    <div id="canvas-container"></div>
+    
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
